@@ -1,1 +1,1 @@
-Authuors: Helina Belete & Dumas Okouta
+Authors: Helina Belete & Dumas Okouta

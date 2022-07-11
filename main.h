@@ -74,6 +74,12 @@ struct spec_printer
 	char spec;
 	void (*print_arg)(va_list *args, fmt_info_t *fmt_info);
 };
+struct convert
+{
+	char *sym;
+	int (*f)(va_list);
+};
+typedef struct convert conver_t;
 typedef struct spec_printer spec_printer_t;
 typedef unsigned char uchar_t;
 typedef unsigned short ushort_t;

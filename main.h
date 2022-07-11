@@ -16,11 +16,11 @@
  *
  */
 
-typedef struct format
+typedef struct print
 {
-	char *id;
-	int (*f)();
-} convert_t;
+	char *t;
+	int (*f)(va_list);
+} print_t;
 
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
@@ -46,4 +46,4 @@ int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
-#endif
+#endif /*_main_h*/

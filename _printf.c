@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdlib.h"
 
 /**
  * _printf - Receives the main string and all the necessary parameters to
@@ -9,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int printed_chars;
-	conver_t f_list[] = {
+	print_t f_list[] = {
 
 		{"c", print_char},
 
